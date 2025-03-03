@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-txtBlue;
+}
+
+body {
+  @apply overflow-x-hidden font-inter;
+}
+#root {
+  @apply overflow-x-hidden;
+}
+a {
+  @apply block focus:outline-none;
+}
+button {
+  @apply focus:outline-none;
+}
+img {
+  @apply w-full h-auto object-cover;
+}
+
+.banner-main {
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+}
+
+.bread-crumb:last-child svg {
+  @apply hidden;
+}
+
+.customCheckbox:checked + label .bg-primary {
+  @apply scale-100;
+}
+.customCheckbox:checked + label .border {
+  @apply border-primary;
+}
+
+.pagination li a {
+  @apply h-[35px] md:h-[50px] w-[35px] md:w-[50px] rounded-full flex items-center justify-center bg-grey1600 cursor-pointer text-sm md:text-base;
+}
+.pagination li.previous,
+.pagination li.next {
+  @apply hidden;
+}
+.pagination li.selected a {
+  @apply bg-primary text-white;
+}
+
+/* .demo1:hover ~ div {
+  @apply bg-red-700;
+}
+
+.text {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(#000, #fff);
+  position: relative;
+  background-repeat: no-repeat;
+  display: inline;
+  -webkit-background-clip: text;
+  background-size: 10% 100%;
+} */
